@@ -1,0 +1,132 @@
+, html, body {
+    margin: 0;
+    padding: 0;
+    font-family:"roboto", sans-serif;
+    box-sizing: border-box;
+   background-color: #222;
+  
+    
+}
+.container {
+    display: flex; 
+    width: 100%;
+    height: 80px;
+   
+}
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
+    height: 80px;
+    background-color: #222;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0,5);
+}
+.brand {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+
+}
+.firstname {
+    color: white;
+    font-weight: 700;
+}
+.lastname {
+    color: orange;
+    font-weight: 400;
+    padding-left: 4px;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation>li {
+    list-style-type: none;
+    padding: 15px;
+    
+}
+.navigation>li>a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navigation>li>a:hover {
+    color: orange;
+    transition: all. 3s ease-in-out;
+
+}
+.navigation>li>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    
+}
+.navigation>li>img>:hover {
+    width: 65px;
+    height: 65px;
+    border-radius: 65px;
+   
+    transition: all .3s ease-in-out;
+}
+.active {
+    background-color: orange;
+    color: white;
+    padding: 15px;
+}
+.active:hover {
+    color: white !important;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #222;
+    
+}
+.content {
+ text-align: center;
+ background-color: #222;
+}
+.content h1{
+    font-size: 50px;
+    color: rgb(133, 58, 58);
+    font-weight: 150;
+    margin-top: 6%;
+    top: 10%;
+    margin-bottom: 3%;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 40%;
+    color: rgb(129, 32, 32);
+    font-size: 24px;
+    border: 2px solid rgb(140, 41, 41);
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.backvid{
+    position: absolute;
+    right: 0;
+     bottom: 0;
+     z-index: -1;
+
+}
+@media (min-aspect-ratio: 16/9){
+    .backvid{
+        width: 100%;
+        height: auto;
+    }
+}
